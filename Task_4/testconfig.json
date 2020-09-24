@@ -1,0 +1,36 @@
+{
+  "browsers": {
+    "chrome": {
+      "pathToDriver": "\\A1QE\\WebDrivers\\chromedriver_win32",
+      "options": {
+        "leaveBrowserRunning": "true",
+        "startSizeWindow": "start-maximized",
+        "mode": "--incognito",
+        "implicitWait": 5,
+        "explicitWait": 5
+      },
+      "isActive": true
+    },
+    "firefox": {
+      "pathToDriver": "\\A1QE\\WebDrivers\\geckodriver-v0.27.0-win32",
+      "options": {
+        "startSizeWindow": "start-maximized",
+        "implicitWait": 5,
+        "explicitWait": 5
+      },
+      "isActive": false
+    }
+  },
+  "localization": [
+    {
+      "name": "ru",
+      "isActive": false
+    },
+    {
+      "name": "be",
+      "isActive": true
+    }
+  ],
+  "url": "https://www.aviasales.ru",
+  "pathDownloadFiles": "Download\\"
+}
