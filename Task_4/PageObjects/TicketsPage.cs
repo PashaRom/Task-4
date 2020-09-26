@@ -2,6 +2,7 @@
 using System.Text.RegularExpressions;
 using System.Collections.ObjectModel;
 using System.Collections.Generic;
+using System.Linq;
 using Test.Models;
 using Test.Framework;
 using Test.Framework.Logging;
@@ -97,9 +98,8 @@ namespace Test.PageObjects
                 Log.Info($"Look for the cheapest price into list prise item.");
                 foreach (IWebElement web in webElements)
                 {
-                    string stringPrice = web.FindElement(By.XPath(".//span[@class='buy-button__price']/span[@data-testid='price-with-logic']")).Text;
-                    //int r = Convert.ToInt32(Regex.Replace(stringPrice, @"[^\d]+", ""));
-                    int price = Convert.ToInt32(Regex.Replace(stringPrice, @"[^\d]+", ""));//Convert.ToInt32(stringPrice);
+                    string stringPrice = web.FindElement(By.XPath(".//span[@class='buy-button__price']/span[@data-testid='price-with-logic']")).Text;                    
+                    int price = Convert.ToInt32(Regex.Replace(stringPrice, @"[^\d]+", ""));
                     if(counter == 0)
                     {
                         cheapestPrice = price;
@@ -153,9 +153,8 @@ namespace Test.PageObjects
                 Log.Info($"Look for the cheapest price into list prise item.");
                 foreach (IWebElement web in webElements)
                 {
-                    string stringPrice = web.FindElement(By.XPath(".//span[@class='buy-button__price']/span[@data-testid='price-with-logic']")).Text;
-                    //int r = Convert.ToInt32(Regex.Replace(stringPrice, @"[^\d]+", ""));
-                    int price = Convert.ToInt32(Regex.Replace(stringPrice, @"[^\d]+", ""));//Convert.ToInt32(stringPrice);
+                    string stringPrice = web.FindElement(By.XPath(".//span[@class='buy-button__price']/span[@data-testid='price-with-logic']")).Text;                    
+                    int price = Convert.ToInt32(Regex.Replace(stringPrice, @"[^\d]+", ""));
                     if (counter == 0)
                     {
                         cheapestPrice = price;
