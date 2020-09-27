@@ -1,0 +1,28 @@
+{  
+  "flight1": [
+    {
+      "departeCity": "Минск",
+      "arrivalCity": "Стамбул"
+    },
+    {
+      "departeCity": "Стамбул",
+      "arrivalCity": "Минск"
+    }
+  ],
+  "flight2": [
+    {
+      "departeCity": "Минск",
+      "arrivalCity": "Стамбул"
+    },
+    {
+      "departeCity": "Стамбул",
+      "arrivalCity": "Тунис"
+    }
+  ],
+  "flight3": [
+    {
+      "departeCity": "Минск",
+      "arrivalCity": "Стамбул"
+    }
+  ]
+}
